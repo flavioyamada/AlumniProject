@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+
+    <title>Questionário</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+    body {
+        background-color: #FFFAFA;
+    }
+        .row {
+            position: relative;
+            top: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+  
+   
+ </h1>
+  <div class="row">
+     <div class="col-md-offset-4 col-md-4">
+
+
+                        <form class="form-horizontal" action="ques.php" method="post">
+                                <center><h2>Questionário</h2></center> 
+                            
+                            <div class="form-group">
+                                <label class="">1-Curso Finalizado:</label>
+                                <div class="">
+                                    <label for="ads"><input type="radio" name="cf" id="ads" value="ads" required="required" />  Análise e Des. de Sistemas</label>
+                                </div>
+                                <div class="">
+                                    <label for="dinteriores"><input type="radio" name="cf" id="dinteriores" value="dinteriores" required="required" />  Design de Interiores</label>
+                                </div>
+                                <div class="">
+                                    <label for="pedagogia"><input type="radio" name="cf" id="pedagogia" value="pedagogia" required="required" />  Pedagogia</label>
+                                </div>
+                                <div class="">
+                                    <label for="adm"><input type="radio" name="cf" id="adm" value="adm" required="required" />  Administração</label>
+                                </div>
+                            </div>
+
+                             <div class="form-group">
+                                <label class="">2-Você já trabalhava quando iniciou o curso? </label>
+                                <div class="">
+                                    <label for="sim"><input type="radio" name="vct" id="sim" value="sim" required="required" />Sim</label>
+                                </div>
+                                <div class="">
+                                    <label for="nao"><input type="radio" name="vct" id="nao" value="nao" required="required" />Não</label>
+                                </div>
+                            </div>
+
+                             <div class="form-group">
+                                <label class="">Se sim, era na área?</label>
+                                <div class="">
+                                    <label for="sim"><input type="radio" name="ssa" id="sim" value="sim" required="required" />Sim</label>
+                                </div>
+                                <div class="">
+                                    <label for="nao"><input type="radio" name="ssa" id="nao" value="nao" required="required" />Não</label>
+                                </div>
+                            </div>
+
+                             <div class="form-group">
+                                <label class="">Qual cargo?</label>
+                                <div class="">
+                                    <label for="estagio"><input type="radio" name="qcargo" id="estagio" value="estagio" />Estágio</label>
+                                </div>
+                                <div class="">
+                                    <label for="treinee"><input type="radio" name="qcargo" id="treinee" value="treinee" />Treinee</label>
+                                </div>
+                                 <div class="">
+                                    <label for="junior"><input type="radio" name="qcargo" id="junior" value="junior" />Junior</label>
+                                </div>
+                                <div class="">
+                                    <label for="pleno"><input type="radio" name="qcargo" id="pleno" value="pleno" />Pleno</label>
+                                </div>
+                                 <div class="">
+                                    <label for="senior"><input type="radio" name="qcargo" id="senior" value="senior" />Senior</label>
+                                </div>
+                                <div class="">
+                                    <label for="outro"><input type="text" name="qcargo" id="outro" placeholder="outro"/></label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="">4- Você está exercendo atividade profissional atualmente?</label>
+                                <div class="">
+                                    <label for="sim_a"><input type="radio" name="vceapa" id="sim_a" value="sim_a" required="required" />Sim, na área da minha formação acadêmica .</label>
+                                </div>
+                                <div class="">
+                                    <label for="sim_o"><input type="radio" name="vceapa" id="sim_o" value="sim_o" required="required" />Sim, fora da área de minha formação acadêmica.</label>
+                                </div>
+                                <div class="">
+                                    <label for="nao"><input type="radio" name="vceapa" id="nao" value="nao" required="required" />Não</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="">5- Em que tipo de organização você exerce sua atividade profissional?</label>
+                                <div class="">
+                                    <label for="autonomo"><input type="radio" name="at_prof" id="autonomo" value="autonomo" />Autônoma </label>
+                                </div>
+                                <div class="">
+                                    <label for="empresa_pro"><input type="radio" name="at_prof" id="empresa_pro" value="empresa_pro" />Empresa própria </label>
+                                </div>
+                                 <div class="">
+                                    <label for="empresa_pri"><input type="radio" name="at_prof" id="empresa_pri" value="empresa_pri" />Empresa privada</label>
+                                </div>
+                                <div class="">
+                                    <label for="instituição_pub"><input type="radio" name="at_prof" id="instituição_pub" value="instituição_pub" />Instituição publica</label>
+                                </div>
+                                 <div class="">
+                                    <label for="na"><input type="radio" name="at_prof" id="na" value="na" />N.A.</label>
+                                </div>
+                            </div>
+
+                             <div class="form-group">
+                                <label class="">6-
+Como você avalia a sua situação profissional atual comparada àquela em que você se encontrava quando ingressou no curso do IFSP?
+</label>
+                                <div class="">
+                                    <label for="melhor"><input type="radio" name="sitprof" id="melhor" value="melhor" required="required" />Melhor</label>
+                                </div>
+                                <div class="">
+                                    <label for="igual"><input type="radio" name="sitprof" id="igual" value="igual" required="required" />Igual</label>
+                                </div>
+                                <div class="">
+                                    <label for="pior"><input type="radio" name="sitprof" id="pior" value="pior" required="required" />Pior</label>
+                                </div>
+                            </div>
+
+                            <h4>Perguntas relacionadas ao curso:</h4>
+
+                            <div class="form-group">
+                                <label class="">1-Você estava preparado para o mercado de trabalho quando se formou?
+                                 </label>
+                                <div class="">
+                                    <label for="muito"><input type="radio" name="vcepap" id="muito" value="muito" required="required" />Muito</label>
+                                </div>
+                                <div class="">
+                                    <label for="razoavel"><input type="radio" name="vcepap" id="razoavel" value="razoavel" required="required" />Razoavelmente</label>
+                                </div>
+                                <div class="">
+                                    <label for="pouco"><input type="radio" name="vcepap" id="pouco" value="pouco" required="required" />pouco</label>
+                                </div>
+                                <div class="">
+                                    <label for="nada"><input type="radio" name="vcepap" id="nada" value="nada" required="required" />Nada</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="">2-Como você avalia o nível de exigência do curso
+                                 </label>
+                                <div class="">
+                                    <label for="devexigirmum"><input type="radio" name="cvcan" id="devexigirmum" value="devexigirmum" required="required" />  Deveria exigir muito mais</label>
+                                </div>
+                                <div class="">
+                                    <label for="devexigirpm"><input type="radio" name="cvcan" id="devexigirpm" value="devexigirpm" required="required" />Deveria exigir um pouco mais</label>
+                                </div>
+                                <div class="">
+                                    <label for="exiginc"><input type="radio" name="cvcan" id="exiginc" value="exiginc" required="required" />Exige na medida certa</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="">3-Como você avalia sua experiência no campus
+                                 </label>
+                                <div class="">
+                                    <label for="excelente"><input type="radio" name="cmvcaec" id="excelente" value="excelente" required="required" />Excelente</label>
+                                </div>
+                                <div class="">
+                                    <label for="boa"><input type="radio" name="cmvcaec" id="boa" value="boa" required="required" />Boa</label>
+                                </div>
+                                <div class="">
+                                    <label for="satisfatoria"><input type="radio" name="cmvcaec" id="satisfatoria" value="satisfatoria" required="required" />Satisfatória</label>
+                                </div>
+                                <div class="">
+                                    <label for="pessima"><input type="radio" name="cmvcaec" id="pessima" value="pessima" required="required" />Péssima</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="">4- Você teria interesse em cursar uma Pós-graduação nesta Instituição?</label>
+                                <div class="">
+                                    <label for="sim"><input type="radio" name="intposgrad" id="sim" value="sim" required="required" />Sim</label>
+                                </div>
+                                <div class="">
+                                    <label for="nao"><input type="radio" name="intposgrad" id="nao" value="nao" required="required" />Não</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="">5- Se sim, selecione a opção de curso de pós-graduação </label>
+                                <div class="">
+                                    <label for="ead"><input type="radio" name="sesimposgrad" id="ead" value="ead" required="required" />EAD</label>
+                                </div>
+                                <div class="">
+                                    <label for="semipresencial"><input type="radio" name="sesimposgrad" id="semipresencial" value="semipresencial" required="required" />Semipresencial</label>
+                                </div>
+                                <div class="">
+                                    <label for="presencial"><input type="radio" name="sesimposgrad" id="presencial" value="presencial" required="required" />Presencial</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="sugestao">Deixa aqui uma sugestão, elogio ou críticas para contribuir com a qualidade dos nossos cursos e do nosso Campus:</label> 
+                               <input type="text" name="sugestao" id="sugestao" required class="form-control">
+                                  </div>
+
+
+                            <div class="form-group">
+                                   <input type="submit" value="Enviar" required class="btn btn-danger center-block">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!-- ################################################################################## -->
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+        </div>
+
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

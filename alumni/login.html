@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+
+    <title>Login</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+    body {
+        background-color: #FFFAFA;
+        
+    }
+        .row {
+            position: relative;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="row">
+ <div class="col-md-offset-4 col-md-4">
+<form action="php/verifica_login.php" method="get" class="form">
+
+    <center><img src="img/Alumni.jpg" height="150" width="150" ></center> 
+
+	<div class="form-group">
+	<label for="email">Usuário:</label> 
+    <input type="text" name="email" id="email" required class="form-control">
+     
+    </div>
+    <div class="form-group">
+    <label for="senha">Senha:</label> 
+    <input type="password" name="senha" id="senha" required class="form-control">
+    </br>
+    <form action="php/verifica_login.php" method="get">Lembrar<input type="checkbox" name="lembrar_senha" value="lembrar_senha">
+    </br>
+    <a href="caadast.php">Cadastrar-se</a>
+    
+</form>
+    
+</form>
+    <input type="submit" value="Logar" required class="btn btn-danger center-block">
+</form>
+</div>
+</div>
+
+</body>
+</html>

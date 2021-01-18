@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.3
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: 28-Jun-2019 às 06:21
+- Versão do servidor: 10.1.36-MariaDB
+- versão do PHP: 7.2.10
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="alumni" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="cadastro_cliente">
+                CREATE TABLE `cadastro_cliente` (
+                  `id_cadastro_cliente` int(10) NOT NULL AUTO_INCREMENT,
+                  `nome` varchar(100) NOT NULL,
+                  `email` varchar(100) NOT NULL,
+                  `senha` varchar(100) NOT NULL,
+                  `cpf` varchar(20) NOT NULL,
+                  `telefone_cell` varchar(100) NOT NULL,
+                  `genero` varchar(1000) NOT NULL,
+                  `nascimento` date NOT NULL,
+                  `curso` varchar(60) NOT NULL,
+                  `dt_clonc` date NOT NULL,
+                  `rg` int(11) NOT NULL,
+                  `cep` varchar(9) NOT NULL,
+                  `estado` varchar(40) NOT NULL,
+                  `cidade` varchar(40) NOT NULL,
+                  `bairro` varchar(40) NOT NULL,
+                  `rua` varchar(60) NOT NULL,
+                  `complemento` varchar(40) NOT NULL,
+                  `numero` int(11) NOT NULL,
+                  PRIMARY KEY (`id_cadastro_cliente`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="empresa">
+                CREATE TABLE `empresa` (
+                  `id_emp` int(11) NOT NULL AUTO_INCREMENT,
+                  `nsocial` varchar(40) NOT NULL,
+                  `nficticio` varchar(40) NOT NULL,
+                  `cnpj` int(20) NOT NULL,
+                  `cep` int(40) NOT NULL,
+                  `estado` varchar(40) NOT NULL,
+                  `cidade` varchar(40) NOT NULL,
+                  `bairro` varchar(40) NOT NULL,
+                  `rua` varchar(40) NOT NULL,
+                  `telefone` varchar(40) NOT NULL,
+                  `email` varchar(40) NOT NULL,
+                  `senha` varchar(40) NOT NULL,
+                  PRIMARY KEY (`id_emp`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="noticias">
+                CREATE TABLE `noticias` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `tema` varchar(40) NOT NULL,
+                  `data` date NOT NULL,
+                  `descricao` varchar(10000) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="questio">
+                CREATE TABLE `questio` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `cf` varchar(40) NOT NULL,
+                  `vct` varchar(40) NOT NULL,
+                  `ssa` varchar(40) NOT NULL,
+                  `qcargo` varchar(40) NOT NULL,
+                  `vceapa` varchar(40) NOT NULL,
+                  `at_prof` varchar(40) NOT NULL,
+                  `sitprof` varchar(40) NOT NULL,
+                  `vcepap` varchar(40) NOT NULL,
+                  `cvcan` varchar(40) NOT NULL,
+                  `cmvcaec` varchar(40) NOT NULL,
+                  `intposgrad` varchar(40) NOT NULL,
+                  `sesimposgrad` varchar(40) NOT NULL,
+                  `sugestao` varchar(40) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="tabala_adm">
+                CREATE TABLE `tabala_adm` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `usuario` varchar(40) NOT NULL,
+                  `senha` varchar(40) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="vaga_emprego">
+                CREATE TABLE `vaga_emprego` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `titulo` varchar(40) NOT NULL,
+                  `descricao` varchar(40) NOT NULL,
+                  `salario` varchar(10) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'alumni'
+    -->
+    <database name="alumni">
+        <!-- Tabela cadastro_cliente -->
+        <table name="cadastro_cliente">
+            <column name="id_cadastro_cliente">10</column>
+            <column name="nome">Anderson</column>
+            <column name="email">guilhermecesarm@gmail.com</column>
+            <column name="senha">1234</column>
+            <column name="cpf">46875717867</column>
+            <column name="telefone_cell">12996424687</column>
+            <column name="genero">masculino</column>
+            <column name="nascimento">2000-10-21</column>
+            <column name="curso">ADS</column>
+            <column name="dt_clonc">2020-12-31</column>
+            <column name="rg">2147483647</column>
+            <column name="cep"></column>
+            <column name="estado"></column>
+            <column name="cidade"></column>
+            <column name="bairro"></column>
+            <column name="rua"></column>
+            <column name="complemento"></column>
+            <column name="numero">0</column>
+        </table>
+        <!-- Tabela empresa -->
+        <table name="empresa">
+            <column name="id_emp">1</column>
+            <column name="nsocial">Google</column>
+            <column name="nficticio">google</column>
+            <column name="cnpj">2147483647</column>
+            <column name="cep">12322320</column>
+            <column name="estado">SP</column>
+            <column name="cidade">JacareÃ­</column>
+            <column name="bairro">Santa Cruz dos LÃ¡zaros</column>
+            <column name="rua">Rua Luciano de Toledo</column>
+            <column name="telefone"></column>
+            <column name="email">gui@g.com</column>
+            <column name="senha">1234</column>
+        </table>
+        <table name="empresa">
+            <column name="id_emp">2</column>
+            <column name="nsocial">Google</column>
+            <column name="nficticio">google</column>
+            <column name="cnpj">2147483647</column>
+            <column name="cep">12322320</column>
+            <column name="estado">SP</column>
+            <column name="cidade">JacareÃ­</column>
+            <column name="bairro">Santa Cruz dos LÃ¡zaros</column>
+            <column name="rua">Rua Luciano de Toledo</column>
+            <column name="telefone"></column>
+            <column name="email">gui@g.com</column>
+            <column name="senha">2020</column>
+        </table>
+        <table name="empresa">
+            <column name="id_emp">3</column>
+            <column name="nsocial">Google</column>
+            <column name="nficticio">google</column>
+            <column name="cnpj">2147483647</column>
+            <column name="cep">12322320</column>
+            <column name="estado">SP</column>
+            <column name="cidade">JacareÃ­</column>
+            <column name="bairro">Santa Cruz dos LÃ¡zaros</column>
+            <column name="rua">Rua Luciano de Toledo</column>
+            <column name="telefone"></column>
+            <column name="email">gui@g.com</column>
+            <column name="senha">12345</column>
+        </table>
+        <!-- Tabela noticias -->
+        <table name="noticias">
+            <column name="id">2</column>
+            <column name="tema">Internet fora do ar</column>
+            <column name="data">2019-06-27</column>
+            <column name="descricao">a internet no if esta temporariamente indisponivel.</column>
+        </table>
+        <!-- Tabela questio -->
+        <table name="questio">
+            <column name="id">1</column>
+            <column name="cf">dinteriores</column>
+            <column name="vct">sim</column>
+            <column name="ssa">sim</column>
+            <column name="qcargo"></column>
+            <column name="vceapa">sim_a</column>
+            <column name="at_prof">empresa_pri</column>
+            <column name="sitprof">igual</column>
+            <column name="vcepap">nada</column>
+            <column name="cvcan">devexigirmum</column>
+            <column name="cmvcaec">satisfatoria</column>
+            <column name="intposgrad">sim</column>
+            <column name="sesimposgrad"></column>
+            <column name="sugestao">gggg</column>
+        </table>
+        <table name="questio">
+            <column name="id">2</column>
+            <column name="cf">ads</column>
+            <column name="vct">sim</column>
+            <column name="ssa">nao</column>
+            <column name="qcargo">nagumo</column>
+            <column name="vceapa">sim_o</column>
+            <column name="at_prof">empresa_pri</column>
+            <column name="sitprof">igual</column>
+            <column name="vcepap">razoavel</column>
+            <column name="cvcan">devexigirmum</column>
+            <column name="cmvcaec">excelente</column>
+            <column name="intposgrad">sim</column>
+            <column name="sesimposgrad">presencial</column>
+            <column name="sugestao">n</column>
+        </table>
+        <!-- Tabela tabala_adm -->
+        <table name="tabala_adm">
+            <column name="id">1</column>
+            <column name="usuario">Extensão@IFSP</column>
+            <column name="senha">ifspjcr@alumni2019</column>
+        </table>
+        <table name="tabala_adm">
+            <column name="id">2</column>
+            <column name="usuario">teste</column>
+            <column name="senha">1234</column>
+        </table>
+        <!-- Tabela vaga_emprego -->
+        <table name="vaga_emprego">
+            <column name="id">1</column>
+            <column name="titulo">Aux</column>
+            <column name="descricao">teste</column>
+            <column name="salario">1000.00</column>
+        </table>
+    </database>
+</pma_xml_export>
